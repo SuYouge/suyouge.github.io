@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "45d85382bde5751b",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f7895c1b8d6205f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dec23ce8280a34c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/blog/20260404 - Template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20260404 - Template"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d8ac32490b341c75",
+    "type": "split",
+    "children": [
+      {
+        "id": "58cfb433a6fc9573",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "52f3764e7d8cd5d6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "be7257626779608e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "d333eb49eb0d02e0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8caed1367bc84bc1",
+    "type": "split",
+    "children": [
+      {
+        "id": "78d2daf50a5afad6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "172d8bf83d829169",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/content/blog/20260404 - Template.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "20260404 - Template 的反向链接列表"
+            }
+          },
+          {
+            "id": "05f2038123ce4ac1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/content/blog/20260404 - Template.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "20260404 - Template 的出链列表"
+            }
+          },
+          {
+            "id": "566a6f9953a49614",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "3a5aa6a6e8d63aec",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "d9e805a10403dd31",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/content/blog/20260404 - Template.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "20260404 - Template 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "52f3764e7d8cd5d6",
+  "lastOpenFiles": [
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1OzR7N.webp",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_1K3exb.webp",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_20h1Jc.webp",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_1MGks8.webp",
+    "dist/sitemap-index.xml",
+    "dist/sitemap-0.xml",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1Sf7o8.webp",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_ZPegxP.webp",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1uDn3e.webp",
+    "dist/index.html",
+    "dist/rss.xml",
+    "dist/tags/misc/index.html",
+    "dist/tags/misc",
+    "dist/tags/index.html",
+    "dist/tags",
+    "dist/empty/index.html",
+    "dist/empty",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne.jpg",
+    "dist/favicon.svg",
+    "dist/favicon-32x32.png",
+    "src/content/blog/2025-10-03-stoic-philosophy.md",
+    "src/content/blog/2025-10-01-ataraxia.md",
+    "src/content/blog/20260404 - Template.md",
+    "未命名.md",
+    "template/blog.md"
+  ]
+}
