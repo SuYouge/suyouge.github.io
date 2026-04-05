@@ -9,7 +9,6 @@ tags:
   - Chinese
   - SOP
 ---
-
 # 1. 基本操作
 ## 1. node环境准备
 1. 在 macos 上准备`fnm`工具，在 Windows 或者 Linux 上可以用`nvm`进行控制
@@ -23,7 +22,7 @@ tags:
 2. 执行`npm install`后创建好环境即可`npm run dev`或者`npm run build & npm run preview`。
 ## 4. Obsidian配置
 1. 将`git clone`下来的文件夹作为`obsidian`的`vault`打开
-2. 修改内链风格以及相对路径模式，支持图片的粘贴自动移动到`assets`目录下
+2. 修改内链风格以及相对路径模式，支持图片的粘贴自动移动到`assets`目录下；为减小仓库空间还可以引入`Image Converter`插件。
 3. （可选）配置插件`Excalidraw`和`mdx as md`
 4. （可选）配置`Excalidraw`插件以支持同步保存`.excalidraw`文件
 
@@ -39,3 +38,7 @@ tags:
 2. 在`mdx`中引用即可，格式在[这里](https://github.com/SuYouge/suyouge.github.io/blob/main/src/content/blog/excalidraw.mdx)，记得查看源码，否则组件标签会不显示。
 3. 在本地的`obsidian`环境中安装`Excalidraw`插件，并配置同步生成`.excalidraw`文件，即可实现所见即所得（大概）的修改。
 4. **TODO**: 后续将引入`skill`系统来自动生成`excalidraw`文件，类似[这个](https://www.youtube.com/watch?v=m3fqyXZ4k4I)视频里所做的。
+## 3. obsidian模板配置
+1. 创建一个`template`文件夹，并创建`blog.md`文件作为模板
+2. 在`obsidian`中配置模板目录即可
+3. 使用流程为：创建一个空白文件，`ctrl+p`插入模板
