@@ -22,9 +22,10 @@ tags:
 2. 执行`npm install`后创建好环境即可`npm run dev`或者`npm run build & npm run preview`。
 ## 4. Obsidian配置
 1. 将`git clone`下来的文件夹作为`obsidian`的`vault`打开
-2. 修改内链风格以及相对路径模式，支持图片的粘贴自动移动到`assets`目录下；为减小仓库空间还可以引入`Image Converter`插件。
-3. （可选）配置插件`Excalidraw`和`mdx as md`
-4. （可选）配置`Excalidraw`插件以支持同步保存`.excalidraw`文件
+2. 修改内链风格以及相对路径模式，支持图片的粘贴自动移动到`assets`目录下；
+3. （可选）配置插件`Excalidraw`和`mdx as md`。
+4. （可选）配置`Excalidraw`插件以支持同步保存`.excalidraw`文件。
+5. （可选）安装`obsidian`插件以自动压缩过大的图片。
 
 # 2. 进阶操作
 ## 1. 增加 katex 支持
