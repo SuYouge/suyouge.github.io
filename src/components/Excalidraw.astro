@@ -1,0 +1,168 @@
+---
+import { JSDOM } from "jsdom";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { TextEncoder, TextDecoder } from "node:util";
+
+interface Props {
+  src: string;
+  className?: string;
+}
+
+const { src, className = "" } = Astro.props;
+
+// --- 环境伪装 (保持不变) ---
+const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
+const { window } = dom;
+const safeGlobalSet = (key: string, value: any) => {
+  try { (global as any)[key] = value; } catch (e) {
+    Object.defineProperty(global, key, { value, writable: true, configurable: true });
+  }
+};
+safeGlobalSet('window', window);
+safeGlobalSet('document', window.document);
+safeGlobalSet('Node', window.Node);
+safeGlobalSet('Element', window.Element);
+safeGlobalSet('SVGElement', window.SVGElement);
+safeGlobalSet('TextEncoder', TextEncoder);
+safeGlobalSet('TextDecoder', TextDecoder);
+safeGlobalSet('devicePixelRatio', 1);
+if (!global.navigator) safeGlobalSet('navigator', window.navigator);
+class FontFace { constructor() {} load() { return Promise.resolve(this); } }
+safeGlobalSet('FontFace', FontFace);
+if (!(window.document as any).fonts) {
+  (window.document as any).fonts = { add: () => {}, check: () => true, load: () => Promise.resolve([]) };
+}
+
+const { exportToSvg } = await import("@excalidraw/utils");
+const drawingsDir = path.resolve("./src/assets/drawings/");
+const absolutePath = path.join(drawingsDir, src);
+
+let svgString = "";
+
+try {
+  const rawContent = await fs.readFile(absolutePath, "utf-8");
+  const sceneData = JSON.parse(rawContent);
+
+  if (sceneData.elements) {
+    sceneData.elements = sceneData.elements.map((el: any) => {
+      if (el.type === "text") return { ...el, fontFamily: 2 };
+      return el;
+    });
+  }
+
+  const svgElement = await exportToSvg({
+    elements: sceneData.elements,
+    appState: { ...sceneData.appState, exportBackground: false, exportWithSymbol: false },
+    files: sceneData.files || {},
+  });
+
+  svgString = svgElement.outerHTML;
+  svgString = svgString
+    .replace(/font-family="[^"]*"/g, '')
+    .replace(/<svg ([^>]+)>/, '<svg $1 width="100%" height="auto" style="display:block; max-width:100%;">');
+
+} catch (error: any) {
+  svgString = `<div class="error-box">渲染失败: ${error.message}</div>`;
+}
+---
+
+<div class:list={["excalidraw-paper-wrapper", className]} data-excalidraw-zoom>
+  <div class="excalidraw-content" set:html={svgString} />
+  <div class="zoom-hint">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+  </div>
+</div>
+
+<style is:global>
+  .excalidraw-paper-wrapper {
+    position: relative;
+    background-color: #fffbeb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    margin: 2rem 0;
+    cursor: zoom-in; /* 提示用户可以点击放大 */
+    transition: transform 0.2s ease;
+  }
+
+  .excalidraw-paper-wrapper:hover {
+    transform: translateY(-2px);
+  }
+
+  .zoom-hint {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    color: #9ca3af;
+    opacity: 0.6;
+  }
+
+  .excalidraw-content svg text {
+    font-family: inherit !important;
+    fill: #1f2937 !important;
+  }
+
+  /* --- 最大化全屏样式 --- */
+  .excalidraw-paper-wrapper.is-maximized {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    margin: 0;
+    padding: 5vh 5vw;
+    border-radius: 0;
+    cursor: zoom-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 251, 235, 0.98); /* 稍微透明的淡黄 */
+  }
+
+  .excalidraw-paper-wrapper.is-maximized .excalidraw-content {
+    width: 90%;
+    max-height: 90vh;
+  }
+
+  .excalidraw-paper-wrapper.is-maximized .zoom-hint {
+    display: none;
+  }
+</style>
+
+<script>
+  // 处理点击最大化逻辑
+  function initExcalidrawZoom() {
+    const wrappers = document.querySelectorAll('[data-excalidraw-zoom]');
+    
+    wrappers.forEach(wrapper => {
+      wrapper.addEventListener('click', () => {
+        wrapper.classList.toggle('is-maximized');
+        
+        // 当放大时，禁止页面滚动
+        if (wrapper.classList.contains('is-maximized')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // 按下 Esc 键关闭
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const maximized = document.querySelector('.excalidraw-paper-wrapper.is-maximized');
+        if (maximized) {
+          maximized.classList.remove('is-maximized');
+          document.body.style.overflow = '';
+        }
+      }
+    });
+  }
+
+  // 兼容 Astro 的生命周期
+  initExcalidrawZoom();
+  document.addEventListener('astro:after-swap', initExcalidrawZoom);
+</script>
