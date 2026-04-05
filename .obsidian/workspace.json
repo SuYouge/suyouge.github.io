@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/blog/20260404 - Template.md",
+                "file": "src/content/blog/20260403 - Template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260404 - Template"
+              "title": "20260403 - Template"
+            }
+          },
+          {
+            "id": "cadd97b689b4c592",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/blog/20260403 - Template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20260403 - Template"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/blog/20260404 - Template.md",
+                "file": "src/content/blog/20260403 - Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "20260404 - Template 的反向链接列表"
+              "title": "20260403 - Template 的反向链接列表"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/blog/20260404 - Template.md",
+                "file": "src/content/blog/20260403 - Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "20260404 - Template 的出链列表"
+              "title": "20260403 - Template 的出链列表"
             }
           },
           {
@@ -156,21 +171,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/blog/20260404 - Template.md",
+                "file": "src/content/blog/20260403 - Template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "20260404 - Template 的大纲"
+              "title": "20260403 - Template 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,29 +200,31 @@
   },
   "active": "52f3764e7d8cd5d6",
   "lastOpenFiles": [
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1OzR7N.webp",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_1K3exb.webp",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_20h1Jc.webp",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_1MGks8.webp",
+    "dist/_astro/DSC02560.uHmDeCUF.jpg",
     "dist/sitemap-index.xml",
     "dist/sitemap-0.xml",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1Sf7o8.webp",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_ZPegxP.webp",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1uDn3e.webp",
+    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_2fbDY5.webp",
+    "dist/_astro/DSC02560.uHmDeCUF_Z4jtT6.webp",
+    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_Zn1SEb.webp",
+    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_ZDhkIe.webp",
+    "dist/_astro/DSC02560.uHmDeCUF_Z1kXCyv.webp",
+    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_1ac3v6.webp",
+    "dist/_astro/DSC02560.uHmDeCUF_2tFKXV.webp",
+    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1OzR7N.webp",
+    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_au5Cp.webp",
+    "dist/_astro/DSC02560.uHmDeCUF_Z2hJLRt.webp",
     "dist/index.html",
-    "dist/rss.xml",
     "dist/tags/misc/index.html",
+    "dist/tags/exp/index.html",
+    "dist/tags/chinese/index.html",
     "dist/tags/misc",
     "dist/tags/index.html",
-    "dist/tags",
-    "dist/empty/index.html",
-    "dist/empty",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne.jpg",
-    "dist/favicon.svg",
-    "dist/favicon-32x32.png",
+    "dist/tags/exp",
+    "dist/tags/chinese",
+    "src/content/blog/笔记系统 - shit like note system.md",
+    "src/content/blog/20260403 - Template.md",
     "src/content/blog/2025-10-03-stoic-philosophy.md",
     "src/content/blog/2025-10-01-ataraxia.md",
-    "src/content/blog/20260404 - Template.md",
     "未命名.md",
     "template/blog.md"
   ]
