@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/blog/20260405-SOP-AstroPages.md",
+                "file": "src/content/blog/笔记系统 - shit-like-note-system.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260405-SOP-AstroPages"
+              "title": "笔记系统 - shit-like-note-system"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/blog/20260405-SOP-AstroPages.md",
+                "file": "src/content/blog/笔记系统 - shit-like-note-system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "20260405-SOP-AstroPages 的反向链接列表"
+              "title": "笔记系统 - shit-like-note-system 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/blog/20260405-SOP-AstroPages.md",
+                "file": "src/content/blog/笔记系统 - shit-like-note-system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "20260405-SOP-AstroPages 的出链列表"
+              "title": "笔记系统 - shit-like-note-system 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/blog/20260405-SOP-AstroPages.md",
+                "file": "src/content/blog/笔记系统 - shit-like-note-system.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "20260405-SOP-AstroPages 的大纲"
+              "title": "笔记系统 - shit-like-note-system 的大纲"
             }
           }
         ],
@@ -189,16 +189,16 @@
   "lastOpenFiles": [
     "dist/sitemap-index.xml",
     "dist/sitemap-0.xml",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z1iUNCb.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z198Lzb.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_ZFOlbo.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_2bphVX.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z139mnC.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_1ceO88.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z2fWWxS.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z1c5jhw.webp",
-    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z1Igpd3.webp",
-    "dist/_astro/Pasted-image-20260405154146.DwfVhSkX_ZTbEce.webp",
+    "dist/_astro/20260405-SOP-AstroPages-1775378946015.QZN2sS3C_PgCtS.webp",
+    "dist/_astro/20260405-SOP-AstroPages-1775378946015.QZN2sS3C_Z1LVU9n.webp",
+    "dist/_astro/20260405-SOP-AstroPages-1775378946015.QZN2sS3C_Z23cmdq.webp",
+    "dist/_astro/20260405-SOP-AstroPages-1775378946015.QZN2sS3C_ZeHWY6.webp",
+    "dist/_astro/system-1775378985172.DyGldNZl_2fqDS2.webp",
+    "dist/_astro/20260405-SOP-AstroPages-1775378946015.QZN2sS3C_Z1epUQM.webp",
+    "dist/_astro/system-1775378985172.DyGldNZl_24bxqF.webp",
+    "dist/_astro/system-1775378985172.DyGldNZl_ZmugJ1.webp",
+    "dist/_astro/20260405-SOP-AstroPages-1775378946015.QZN2sS3C_1Toqju.webp",
+    "dist/_astro/system-1775378985172.DyGldNZl_Z1n18Tn.webp",
     "dist/index.html",
     "dist/tags/template/index.html",
     "dist/tags/sop/index.html",
@@ -208,7 +208,7 @@
     "dist/tags/template",
     "dist/tags/sop",
     "dist/tags/math",
-    "src/content/blog/笔记系统 - shit like note system.md",
+    "src/content/blog/笔记系统 - shit-like-note-system.md",
     "src/content/blog/20260405-SOP-AstroPages.md",
     "src/content/blog/20260403 - Template.md",
     "template/blog.md",

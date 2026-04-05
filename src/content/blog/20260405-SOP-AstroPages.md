@@ -3,12 +3,13 @@ title: Astro 部署
 description: Astro 页面部署的 SOP
 pubDate: 2026-04-05
 slug: 20260405-SOP-AstroPages
-heroImage: ../../assets/Pasted-image-20260405154146.png
+heroImage: ../../assets/20260405-SOP-AstroPages-1775378946015.webp
 heroImageAlt: SOP-Astro
 tags:
   - Chinese
   - SOP
 ---
+
 # 1. 基本操作
 ## 1. node环境准备
 1. 在 macos 上准备`fnm`工具，在 Windows 或者 Linux 上可以用`nvm`进行控制
