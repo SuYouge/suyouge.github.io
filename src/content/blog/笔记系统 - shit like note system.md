@@ -1,13 +1,14 @@
 ---
 title: 笔记系统
-description: This is a short introduction about my miserable note system.
+description: This is a template for blog
 pubDate: 2026-04-04
-slug: shit-like-note-system
+slug: 笔记系统 - shit like note system
 heroImage: ../../assets/Gemini_Generated_Image_9fppdt9fppdt9fpp.png
 heroImageAlt: 让 Gemini 绘制我悲惨的笔记系统
 tags:
   - Chinese
   - Exp
+  - Math
 ---
 [TLDR;看现在的方案](#section1)
 

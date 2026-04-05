@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Caprasimo
+- Font Title: Eater
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/caprasimo/v6/esDT31JQOPuXIUGBp72klZUCGpG-GQ.ttf
+- Font Source: https://fonts.gstatic.com/s/eater/v26/mtG04_FCK7bOvpu2u3FwsXsR.ttf
 - Font License: undefined)

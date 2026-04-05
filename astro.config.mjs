@@ -50,7 +50,17 @@ export default defineConfig({
 		},
 	],
 	integrations: [
-		mdx(),
+		mdx({
+			remarkPlugins: [remarkMath],
+			rehypePlugins: [[
+				rehypeKatex,
+				{
+					output: 'mathml'
+				}
+			]],
+		},
+
+		),
 		sitemap(),
 		icon({
 			// Only include the small set of Iconify mdi icons we need

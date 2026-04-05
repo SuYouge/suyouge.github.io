@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6a58e518c9c62243",
+        "id": "350d7ef1fb9d7cfc",
         "type": "tabs",
         "children": [
           {
-            "id": "3036f9610c1f2b46",
+            "id": "275bc9bc80c9235f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "src/assets/drawings/test.excalidraw"
+                "file": "src/content/blog/20260405-SOP-AstroPages.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "test"
+              "icon": "lucide-file",
+              "title": "20260405-SOP-AstroPages"
             }
           }
         ]
@@ -76,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 436.5,
-    "collapsed": true
+    "width": 436.5
   },
   "right": {
     "id": "8caed1367bc84bc1",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/assets/drawings/test.excalidraw",
+                "file": "src/content/blog/20260405-SOP-AstroPages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "test 的反向链接列表"
+              "title": "20260405-SOP-AstroPages 的反向链接列表"
             }
           },
           {
@@ -112,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/assets/drawings/test.excalidraw",
+                "file": "src/content/blog/20260405-SOP-AstroPages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "test 的出链列表"
+              "title": "20260405-SOP-AstroPages 的出链列表"
             }
           },
           {
@@ -155,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/assets/drawings/test.excalidraw",
+                "file": "src/content/blog/20260405-SOP-AstroPages.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "test 的大纲"
+              "title": "20260405-SOP-AstroPages 的大纲"
             }
           }
         ],
@@ -184,30 +185,35 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3036f9610c1f2b46",
+  "active": "275bc9bc80c9235f",
   "lastOpenFiles": [
     "dist/sitemap-index.xml",
     "dist/sitemap-0.xml",
-    "dist/_astro/DSC02560.uHmDeCUF_Z4jtT6.webp",
-    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_2fbDY5.webp",
-    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_Zn1SEb.webp",
-    "dist/_astro/DSC02560.uHmDeCUF_Z1kXCyv.webp",
-    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_ZDhkIe.webp",
-    "dist/_astro/DSC02560.uHmDeCUF_2tFKXV.webp",
-    "dist/_astro/Gemini_Generated_Image_9fppdt9fppdt9fpp.CEKrrS8Y_1ac3v6.webp",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1OzR7N.webp",
-    "dist/_astro/DSC02560.uHmDeCUF_Z2hJLRt.webp",
-    "dist/_astro/Greek_philosopher_busts.D9szoNne_Z1Sf7o8.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z1iUNCb.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z198Lzb.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_ZFOlbo.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_2bphVX.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z139mnC.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_1ceO88.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z2fWWxS.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z1c5jhw.webp",
+    "dist/_astro/Pastedimage20260405163314.Czh8jaB-_Z1Igpd3.webp",
+    "dist/_astro/Pasted-image-20260405154146.DwfVhSkX_ZTbEce.webp",
     "dist/index.html",
     "dist/tags/template/index.html",
+    "dist/tags/sop/index.html",
+    "dist/tags/math/index.html",
     "dist/tags/exp/index.html",
     "dist/tags/chinese/index.html",
     "dist/tags/template",
-    "dist/tags/index.html",
-    "dist/tags/exp",
-    "dist/tags/chinese",
-    "dist/tags",
+    "dist/tags/sop",
+    "dist/tags/math",
+    "src/content/blog/笔记系统 - shit like note system.md",
+    "src/content/blog/20260405-SOP-AstroPages.md",
     "src/content/blog/20260403 - Template.md",
+    "template/blog.md",
+    "未命名.md",
+    "未命名.canvas",
     "src/assets/drawings/Drawing 2026-04-05 10.57.08.excalidraw.md",
     "src/assets/drawings/Drawing 2026-04-05 10.57.42.excalidraw.md",
     "node_modules/@excalidraw/utils/README.md",
@@ -227,10 +233,6 @@
     "node_modules/perfect-freehand/CHANGELOG.md",
     "node_modules/cssstyle/README.md",
     "node_modules/data-urls/node_modules/whatwg-mimetype/README.md",
-    "node_modules/data-urls/README.md",
-    "node_modules/@bramus/specificity/README.md",
-    "node_modules/@exodus/bytes/README.md",
-    "node_modules/jsdom/node_modules/undici/lib/web/subresource-integrity/Readme.md",
-    "node_modules/jsdom/node_modules/undici/docs/docs/api/api-lifecycle.md"
+    "node_modules/data-urls/README.md"
   ]
 }
