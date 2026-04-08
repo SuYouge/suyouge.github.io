@@ -1,0 +1,52 @@
+---
+title: 文献 RAG 系统
+description: Paper RAG Sytem
+pubDate: 2026-04-07
+slug: 20260407-paper-rag
+heroImage: ../../assets/20260407-paper-rag-1775560126373.webp
+heroImageAlt: Gemini 绘制的文献管理系统
+tags:
+  - Chinese
+---
+import Excalidraw from '../../components/Excalidraw.astro';
+
+# 整体框架
+
+核心是本地的嵌入模型，结合硅基流动比较便宜的 API。
+
+<Excalidraw src="anythingllm_system.excalidraw" className="my-8" />
+
+# 通用设置
+
+<Excalidraw src="anythingllm_general_settings.excalidraw" className="my-8" />
+
+# 工作区设置
+
+<Excalidraw src="anythingllm_workspace_settings.excalidraw" className="my-8" />
+
+# AnythingLLM 架构图
+
+一张超大的图。
+
+## 架构部分
+
+<Excalidraw src="anythingllm_architecture.excalidraw" className="my-8" />
+
+## 核心流程
+
+<Excalidraw src="anythingllm_process.excalidraw" className="my-8" />
+
+## 核心实现
+
+<Excalidraw src="anythingllm_implement.excalidraw" className="my-8" />
+
+## 常用命令
+
+<Excalidraw src="anythingllm_usage.excalidraw" className="my-8" />
+
+# 本地API
+
+这里有比较完整的 anythingLLM API: [AnythingLLM-API-docs](https://github.com/lt54268/AnythingLLM-API-docs)
+
+让 claude code 读取这个文档，即可生成合适的命令或者 python 脚本，实现文件的自动上传和 Embedding。
+
