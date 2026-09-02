@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Low Tech Land</title>
+  <style>
+    .shadow { fill: #d42257; }
+    .disc { fill: #fff; stroke: #3a00ff; }
+    .letter { fill: #3a00ff; }
+
+    @media (prefers-color-scheme: dark) {
+      .shadow { fill: #ff7299; }
+      .disc { fill: #24203f; stroke: #a99cff; }
+      .letter { fill: #a99cff; }
+    }
+  </style>
+  <circle class="shadow" cx="267" cy="267" r="190" />
+  <circle class="disc" cx="244" cy="244" r="190" stroke-width="28" />
+  <path
+    class="letter"
+    d="M54 0V668H224V150H537V0Z"
+    transform="translate(111 406) scale(.45 -.45)"
+  />
+</svg>
