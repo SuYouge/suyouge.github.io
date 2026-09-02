@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+bodyClass: post-page
+---
+<article class="post-shell">
+  <header class="post-heading container">
+    <nav class="breadcrumbs" aria-label="面包屑导航">
+      <a href="/">首页</a><span aria-hidden="true">/</span><a href="/blog/">博客</a>
+    </nav>
+    <p class="eyebrow">Field note · {{ pubDate | dateDisplay }}</p>
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
+    <div class="post-byline">
+      <span>{{ site.author }}</span>
+      <time datetime="{{ pubDate | dateIso }}">{{ pubDate | dateDisplay }}</time>
+      {% if updatedDate %}<span>更新于 {{ updatedDate | dateDisplay }}</span>{% endif %}
+    </div>
+    {% if tags %}
+      <ul class="tag-list" aria-label="文章标签">
+        {% for tag in tags %}
+          <li><a href="/tags/{{ tag | slugify }}/">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </header>
+
+  {% if heroImage %}
+    <figure class="hero-image container-wide">
+      <img src="{{ heroImage | assetUrl }}" alt="{{ heroImageAlt | default('') | escape }}" width="1200" height="630" decoding="async">
+    </figure>
+  {% endif %}
+
+  <div class="prose container">
+    {{ content | safe }}
+  </div>
+
+  <footer class="post-footer container">
+    <p>读到这里了？去看看其他现场笔记。</p>
+    <a class="button-link" href="/blog/">返回全部文章</a>
+  </footer>
+</article>

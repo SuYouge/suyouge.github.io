@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tagName
+permalink: "/tags/{{ tagName | slugify }}/index.html"
+eleventyComputed:
+  title: "Tag: {{ tagName }}"
+  description: "Posts tagged with {{ tagName }}."
+---
+{% set taggedPosts = collections.blogPosts | postsForTag(tagName) %}
+<section class="listing-heading container">
+  <p class="eyebrow">Topic</p>
+  <h1>{{ tagName }}</h1>
+  <p class="lede">{{ taggedPosts.length }} 篇文章</p>
+  <a class="text-link" href="/tags/"><span aria-hidden="true">←</span> 返回所有标签</a>
+</section>
+<section class="post-grid container-wide" aria-label="{{ tagName }} 标签下的文章">
+  {% for post in taggedPosts %}
+    {% include "partials/post-card.njk" %}
+  {% endfor %}
+</section>

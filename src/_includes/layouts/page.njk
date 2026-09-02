@@ -1,0 +1,11 @@
+---
+layout: layouts/base.njk
+---
+<article class="page-shell container prose">
+  <header class="page-heading">
+    <p class="eyebrow">Low Tech Land</p>
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
+  </header>
+  {{ content | safe }}
+</article>

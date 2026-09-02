@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+# Eleventy cache
+.cache/
+
 # dependencies
 node_modules
 

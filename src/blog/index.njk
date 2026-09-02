@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: Learnings, thoughts, and field notes.
+permalink: /blog/index.html
+---
+<section class="listing-heading container">
+  <p class="eyebrow">Notes from the field</p>
+  <h1>Blog</h1>
+  <p class="lede">Learnings, thoughts, and more.</p>
+  <a class="text-link" href="/tags/">按标签浏览 <span aria-hidden="true">→</span></a>
+</section>
+<section class="post-grid container-wide" aria-label="全部文章">
+  {% for post in collections.blogPosts %}
+    {% include "partials/post-card.njk" %}
+  {% endfor %}
+</section>

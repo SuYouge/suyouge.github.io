@@ -1,0 +1,51 @@
+---
+layout: layouts/base.njk
+title: Low Tech Land
+description: Mechanical engineering, research notes, design, and ideas worth keeping.
+bodyClass: home-page
+---
+<section class="stage-hero">
+  <div class="container">
+    <p class="eyebrow">A small workshop on the open web</p>
+    <h1>Low Tech<br><span>Land</span></h1>
+    <p class="stage-intro">机械工程、研究方法、设计与一些尚未定形的想法。</p>
+    <div class="hero-actions">
+      <a class="button-link" href="/blog/">进入博客</a>
+      <a class="text-link" href="/about/">关于我 <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="coach-note" aria-hidden="true">Thought and action<br>in harmony ↗</p>
+  </div>
+</section>
+
+<section class="home-intro container">
+  <div>
+    <p class="eyebrow">Setting the stage</p>
+    <h2>👽 Hello, human!</h2>
+  </div>
+  <div class="home-intro-copy">
+    <p>这里记录一个机械工程博士生正在学习和构建的东西。我不想在成功后重新解释过去，所以先把当下的思考留下来。</p>
+    <p>主题包括论文写作、机械设计、几何与拓扑、强化学习，以及一些抽象但有趣的问题。</p>
+  </div>
+</section>
+
+<section class="latest-section container-wide">
+  <header class="section-heading">
+    <div>
+      <p class="eyebrow">Fresh from the notebook</p>
+      <h2>最新文章</h2>
+    </div>
+    <a class="text-link" href="/blog/">浏览全部 <span aria-hidden="true">→</span></a>
+  </header>
+  <div class="post-grid">
+    {% for post in collections.blogPosts | head(4) %}
+      {% include "partials/post-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+
+<aside class="profile-card container">
+  <p class="eyebrow">Currently staged</p>
+  <h2>Main Stage, reworked</h2>
+  <p>基于 Style Stage 的 Main Stage 视觉语言，为长文阅读、图片和交互图表重新设计。</p>
+  <a class="button-link secondary" href="{{ site.repository }}">查看源码</a>
+</aside>

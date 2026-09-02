@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Eleventy">
+    <meta name="theme-color" content="#3a00ff">
+    {% set pageTitle = title if title else site.name %}
+    {% set pageDescription = description if description else site.description %}
+    {% if heroImage %}
+      {% set socialImage = heroImage | assetUrl %}
+    {% else %}
+      {% set socialImage = "/assets/Greek_philosopher_busts.jpg" %}
+    {% endif %}
+    <title>{{ pageTitle | escape }}{% if pageTitle != site.name %} · {{ site.name }}{% endif %}</title>
+    <meta name="description" content="{{ pageDescription | escape }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} RSS" href="{{ site.url }}/rss.xml">
+    <link rel="stylesheet" href="/css/main-stage.css">
+    <link rel="stylesheet" href="/css/katex.min.css">
+    <meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ pageTitle | escape }}">
+    <meta property="og:description" content="{{ pageDescription | escape }}">
+    <meta property="og:image" content="{{ site.url }}{{ socialImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ pageTitle | escape }}">
+    <meta name="twitter:description" content="{{ pageDescription | escape }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ socialImage }}">
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("theme");
+        const theme = savedTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <script src="/js/site.js" defer></script>
+  </head>
+  <body class="{{ bodyClass | default('') }}">
+    <a class="skip-link" href="#main">跳到正文</a>
+    {% include "partials/header.njk" %}
+    <main id="main" tabindex="-1">
+      {{ content | safe }}
+    </main>
+    {% include "partials/footer.njk" %}
+  </body>
+</html>

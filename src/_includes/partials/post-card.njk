@@ -1,0 +1,19 @@
+<article class="post-card">
+  <a class="post-card-link" href="{{ post.url }}">
+    {% if post.data.heroImage %}
+      <img class="post-card-image" src="{{ post.data.heroImage | assetUrl }}" alt="{{ post.data.heroImageAlt | default('') | escape }}" loading="lazy" decoding="async" width="720" height="360">
+    {% else %}
+      <div class="post-card-placeholder" aria-hidden="true"><span>{{ loop.index | default('·') }}</span></div>
+    {% endif %}
+    <div class="post-card-body">
+      <p class="post-card-meta"><time datetime="{{ post.data.pubDate | dateIso }}">{{ post.data.pubDate | dateDisplay }}</time></p>
+      <h2>{{ post.data.title }}</h2>
+      {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+      {% if post.data.tags %}
+        <ul class="tag-list compact" aria-label="标签">
+          {% for tag in post.data.tags | head(4) %}<li><span>{{ tag }}</span></li>{% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </a>
+</article>

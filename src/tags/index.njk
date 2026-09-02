@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: Tags
+description: Browse all blog tags.
+permalink: /tags/index.html
+---
+<section class="listing-heading container">
+  <p class="eyebrow">Find a thread</p>
+  <h1>Tags</h1>
+  <p class="lede">从一个主题进入这些笔记。</p>
+</section>
+<section class="tag-cloud container" aria-label="全部标签">
+  {% for tag in collections.tagList %}
+    {% set taggedPosts = collections.blogPosts | postsForTag(tag) %}
+    <a href="/tags/{{ tag | slugify }}/">
+      <span>{{ tag }}</span>
+      <small>{{ taggedPosts.length }} 篇</small>
+    </a>
+  {% endfor %}
+</section>
