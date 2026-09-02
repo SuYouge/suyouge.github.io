@@ -15,8 +15,11 @@
     <title>{{ pageTitle | escape }}{% if pageTitle != site.name %} · {{ site.name }}{% endif %}</title>
     <meta name="description" content="{{ pageDescription | escape }}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} RSS" href="{{ site.url }}/rss.xml">
     <link rel="stylesheet" href="/css/main-stage.css">
     <link rel="stylesheet" href="/css/katex.min.css">
