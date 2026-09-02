@@ -62,6 +62,8 @@ tags:
 
 `heroImage` and `heroImageAlt` are optional. The filename becomes the public URL, for example `my-post.md` becomes `/blog/my-post/`.
 
+When this repository is opened as an Obsidian vault, pasted attachments are configured to go to `src/assets/`, links are stored as relative Markdown links, and the authoring template is available from `template/blog.md`.
+
 Markdown images can continue to use paths relative to the article:
 
 ```markdown
@@ -75,6 +77,10 @@ Place Excalidraw source files in `src/assets/drawings/` and embed them with:
 ```
 
 The drawing is converted to inline SVG at build time. The resulting figure supports click-to-zoom and keyboard interaction without shipping the Excalidraw application to readers.
+
+Math is rendered with KaTeX. Use `$E = mc^2$` for inline math and `$$ ... $$` for display math.
+
+Raw HTML and JavaScript are enabled in Markdown. Small one-off scripts may use an inline `<script>` block. Reusable scripts should be stored in `src/js/` and referenced as `/js/filename.js`.
 
 ## Deployment
 
